@@ -1,0 +1,18 @@
+-- Table: catalogo
+
+-- DROP TABLE catalogo;
+
+CREATE TABLE catalogo
+(
+  codigo character varying NOT NULL,
+  nombre character varying,
+  actor character varying,
+  genero character varying,
+  precio double precision,
+  CONSTRAINT p_key_codigo PRIMARY KEY (codigo)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE catalogo
+  OWNER TO postgres;
